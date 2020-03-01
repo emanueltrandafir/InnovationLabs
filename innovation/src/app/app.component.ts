@@ -10,10 +10,7 @@ import { SentimentAnalysisService } from "../app/sentiment-analysis.service";
 export class AppComponent implements OnInit {
   
   constructor( private sentimentAnalysisService : SentimentAnalysisService ){}
-
-  // otherUserImg = "https://www.elle.ro/wp-content/uploads/2019/03/Olivia-Steer.jpg";
-  // otherUserImg = "https://playtech.ro/wp-content/uploads/2019/09/Greta-1170x658.jpg";
-  // otherUserImg = "https://randomuser.me/api/portraits/women/14.jpg";
+ 
   otherUserImg = "../assets/womanAvatar.png";
 
   messages = [
@@ -169,58 +166,6 @@ export class AppComponent implements OnInit {
       image : "../assets/iva_logo.png"
     } 
   ];
-
-  
-  messages2 : any[] = [
-    {  
-      user : "bot",
-      text : "Hello, my name is Iva and I am your conversational assistant for today:)",
-      timestamp : 1582987381096,
-      image : "../assets/iva_logo.png",
-      hasTwoAnswers : true
-    },  {  
-      user : "bot",
-      text : "I won't keep you long, can we chat a bit about society? ( yes / maybe / no )",
-      timestamp : 1582987381096,
-      image : "../assets/iva_logo.png"
-    },  
-    { 
-      user : "user2",
-      text : "yes",
-      timestamp : 1582987381496,
-      image : this.otherUserImg
-    },
-    { 
-      user : "bot",
-      text : "What do you feel when you are obligated to vaccinate your child?",
-      timestamp : 1582987381596,
-      image : "../assets/iva_logo.png"
-    },
-    { 
-      user : "user2",
-      text : "God gave us life, not the government! It can't decide on my rights and the rights of my child. NO to obligatory vaccines!!!",
-      timestamp : 1582987381496,
-      image : this.otherUserImg
-    },
-    { 
-      user : "bot",
-      text : "Is there any other moment in your life when you felt that?",
-      timestamp : 1582987381596,
-      image : "../assets/iva_logo.png"
-    },
-    { 
-      user : "user2",
-      text : "When I depended on social support in order to feed my child",
-      timestamp : 1582987381496,
-      image : this.otherUserImg
-    },
-    { 
-      user : "bot",
-      text : "I see, those could really be tough times. I also feel in control when I am healthy enough for my family to depend on me.",
-      timestamp : 1582987381596,
-      image : "../assets/iva_logo.png"
-    }
-
-  ];
+ 
 
 }
